@@ -12,6 +12,9 @@
     <div class="form-group">
         <label for="name">Name:</label><br>
         <input class="" type="text" id="name" name="name" value=""><br>
+        <check if="{{ isset(@SESSION.nameErr) }}">
+            <p class="profile text-left"> {{ (@SESSION.nameErr) }}</p>
+        </check>
     </div>
 
 
